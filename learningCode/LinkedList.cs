@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace learningCode
 {
-     class LinkedList<T>
+     class  LinkedList<T>
     {
         private Node<T> head;       //declares a private field named head of type Node<T>.
                                     //It represents the starting point of the linked list.
@@ -51,6 +51,24 @@ namespace learningCode
             }
             Console.WriteLine();
         }
+
+        //public bool Search(T x)
+        //{
+        //    Node<T> current = head;
+        //    if (current == null) //If the list is empty, it returns.
+        //    {
+        //        return false;
+        //    }
+        //    while (current != null)
+        //    {
+        //        if (current.Data == x)
+        //            return true; // data found
+        //        current = current.Next;
+
+        //    }
+        //    return false;
+        //}
+
         public void Remove (T data) {
         
             if(head == null) //If the list is empty, it returns.
